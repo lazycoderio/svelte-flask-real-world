@@ -1,3 +1,3 @@
-gp eval CONDUIT_SECRET='secret'
-gp eval FLASK_APP=/backend/autoapp.py
-gp eval FLASK_DEBUG=1
+gp env CONDUIT_SECRET='secret'
+gp env FLASK_APP=/backend/autoapp.py
+gp env FLASK_DEBUG=1
