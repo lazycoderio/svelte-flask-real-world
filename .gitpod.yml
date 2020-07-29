@@ -1,0 +1,6 @@
+image:
+  file: .gitpod.Dockerfile
+
+tasks:
+  - init: 'chmod 777 set_env_vars.sh && ./set_env_vars.sh && cd backend && pip install -r requirements/dev.txt && flask db init && flask db migrate && flask db upgrade && cd ../frontend && yarn'
+    command: 'cd frontend && yarn run dev'
