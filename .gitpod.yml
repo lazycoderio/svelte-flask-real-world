@@ -1,0 +1,4 @@
+tasks:
+  - init: "./run.sh && cd backend && pip install -r requirements/dex.txt && flask db init && flask db migrate && fask db upgrade && cd ../frontend && yarn"
+    command: 'cd frontend && yarn run dev'
+    command: 'cd backend && flask run --with-threads'
