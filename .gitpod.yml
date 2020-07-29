@@ -1,4 +1,4 @@
 tasks:
   - init: "chmod 777 set_env_vars.sh && ./set_env_vars.sh && cd backend && pip install -r requirements/dev.txt && flask db init && flask db migrate && fask db upgrade && cd ../frontend && yarn"
-  - command: 'cd frontend && yarn run dev'
-  - command: 'cd backend && flask run --with-threads'
+    command: 'cd frontend && yarn run dev'
+    command: 'cd backend && flask run --with-threads'
